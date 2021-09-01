@@ -64,7 +64,7 @@ h1{
 h2{
     font-family: cursive;
     text-shadow: 4px 4px 6px #009688;
-    text-decoration: none;
+    box-shadow: none;
 }
 .button{
     text-align: center;
@@ -89,7 +89,7 @@ span{
     background: #009688;
     width: 0%;
     height: 100%;
-    border-radius: 25px solid;
+    border-radius: 25px solid red;
     position: absolute;
     left: 0;
     bottom: 0;
