@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backgroundimg.jpg);
+    
+}
+h1{
+    
+    text-align: center;
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+    padding: 130px;
+    color: transparent;
+    font-size: 59px;
+    background-image: repeating-radial-gradient(red,yellow 10%, green 15%);
+    -webkit-background-clip: text;
+}
+.link{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link ul li{
+    list-style: none; 
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+.link ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.link ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;/* for hover we use 0*/
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.link ul li:hover::after{
+    width: 100%;
+}
+
+.logo{
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 70px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+h2{
+    font-family: cursive;
+    text-shadow: 4px 4px 6px #009688;
+}
+.button{
+    text-align: center;
+    margin-top: 0px;
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+span{
+    background: #009688;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
